@@ -1,0 +1,262 @@
+/* .ChangePass {
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/newbookBg1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0;
+    background-color: #319b54;
+}
+.ChangePass:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+} */
+.ChngPassCont{
+    position: relative;
+    width: 100%;
+    height:100%;
+    min-height: 30rem;
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 2rem 2rem 2rem;
+    background-color:whitesmoke;
+    z-index: 5;
+    gap: 1.5rem;
+}
+/* .ChngPassCont::after{
+    position: absolute;
+    content: '';
+    background: transparent url(./images/binding.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    height:14rem;
+    width:3rem;
+    top:7.5rem;
+    right: 50%;
+    transform: translateX(50%);
+
+} */
+
+.NewPassValida{
+    height: 100%;
+    width:28rem;
+    min-height:23rem;
+    background-color: white;
+    box-shadow:  0 0 2px 2px rgb(189, 189, 189);
+    padding:0 2rem 2rem 2rem ;
+}
+.NewPassValida h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: dimgray;
+    /* background-color: rgb(64, 41, 126); */
+    padding:0.7rem 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.NewPassValida h1 span{
+    position: absolute;
+    font-size: 3rem;
+    width: 6rem;
+    height:6rem;
+    top:-3rem;
+    background-color: #fff;
+    color: dimgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:50%;
+    transform: translateX(-50%);
+    box-shadow: inset 0 0 2px 2px rgb(200, 200, 200);
+
+}
+
+.NewPassValida h2{
+    font-size: 1.1rem;
+    color: rgb(49, 99, 128);
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.invalid{
+    color:rgb(224, 39, 39);
+}
+.invalid:before{
+    position: relative;
+    content:"✖";
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.valid{
+    color:rgb(52, 182, 52);
+}
+.valid:before{
+    position: relative;
+    content: "✔";
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+.NewPassValida p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    word-spacing: 0.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+.ChangePass form {
+    width:28rem;
+    position: relative;
+    border-radius: 1px;
+    min-width: 24rem;
+    padding: 1rem;
+    height:23rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    box-shadow:  0 0 2px 2px rgb(189, 189, 189);
+
+}
+
+.ChangePass form input{
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border:2px solid rgb(182, 182, 182);
+    margin: 1.7rem 0 0 0 ;
+    border-radius: 5px;
+}
+
+.ChangePass form .Btncont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.ChangePass form .saveBtn{
+    outline: none;
+    font-size: 1.1rem;
+    padding:0.4rem 1rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    background-color: #319b54;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: capitalize;
+    border: 1px solid gray;
+}
+.ChangePass form .saveBtn:hover{
+    background-color: rgb(41, 124, 77);
+    color:white;
+    transform: scale(105%);
+}
+
+.ChangePass form .CancelBtn{
+    outline: none;
+    font-size: 1.1rem;
+    padding:0.4rem 1rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    background-color: royalblue;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: capitalize;
+    border: 1px solid rgb(84, 22, 255);
+}
+.ChangePass form .CancelBtn:hover{
+    background-color: rgb(51, 83, 177);
+    color:white;
+    transform: scale(105%);
+}
+.ChangePass form  .error{
+    margin-top: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: red;
+    text-align: center;
+}
+@media(max-width:1350px){
+    .ChngPassCont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ChngPassCont::after{
+        display: none;
+    }
+}
+@media(max-width:580px){
+    .ChngPassCont{
+        padding: 3rem 1rem 1rem 1rem;
+        width:100%;
+    }
+    .NewPassValida{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .NewPassValida h1 span{
+        font-size: 2rem;
+        width: 4rem;
+        height:4rem;
+        top:-2.5rem;
+    }    
+    .NewPassValida h2{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .ChangePass form {
+        width: 100%;
+        min-width: 100%;
+    }
+    .ChangePass form input{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .ChangePass form .Btncont{
+        gap:1.5rem
+    }
+    .ChangePass form .CancelBtn,.ChangePass form .saveBtn{
+        font-size: 1rem;
+    }
+
+}
+@media(max-width:360px){
+    .NewPassValida p{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .ChangePass form .Btncont{
+        gap:1rem
+    }
+    .ChangePass form .CancelBtn,.ChangePass form .saveBtn{
+        font-size: 0.9rem;
+    }
+}

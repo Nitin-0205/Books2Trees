@@ -1,0 +1,124 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#uploaddiv{
+  position: relative;
+  width:100%;
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 1rem 0;
+}
+/* #uploaddiv::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.431);
+} */
+#uploadForm{
+  position: relative;
+  width:30rem;
+  padding:3rem;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  background-color: rgba(245, 239, 214, 0.65);
+  align-items: center;
+  box-shadow: 2px 2px 8px 1px rgb(38, 66, 71);
+  z-index: 100;
+
+}
+#uploadForm .BookreadIcon{
+  width: 7rem;
+  color:palegreen;
+}
+
+.formField{
+  width:100%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border:2px solid gray;
+  outline: none;
+}
+.formField:focus{
+  transform: scale(106%);
+}
+.formuplode{
+  width:100%;
+  padding:1rem  0.5rem;
+  border:2px dashed rgb(70, 141, 153);
+  outline: none;
+  background-color: white;
+}
+.formuplode label{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding:0 0 0.3rem 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color:rgb(35, 35, 219);
+}
+.formuplode label span{
+  font-size: 13px;
+  color: #ED1C16;
+  font-weight: 800;
+  text-align: center;
+}
+.formuplode input{
+  font-size: 1rem;
+}
+#formBtn{
+  width: 10rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border:1px solid gray;
+  outline: none;
+  font-weight: 600;
+  color: rgb(82, 82, 82);
+  font-family:'Courier New', Courier, monospace;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+#formBtn:hover{
+  background-image: linear-gradient(#9e1915,#ED1C16);
+  color:white;
+}
+#formBtn:active{
+  background-image: linear-gradient(rgb(47, 131, 51),rgb(52, 214, 61));
+  color:white;
+  transform: scale(110%);
+}
+@media(max-width:600px){
+  #uploadForm{
+    width:20rem;
+    padding:1rem 0.8rem;
+  }
+  .formField{
+    font-size: 0.8rem;
+  }
+  .formuplode{
+    width:100%;
+    font-size: 0.8rem;
+  }
+  #formBtn{
+    width: 8rem;
+    font-size: 1rem;
+  }
+}
+@media(max-width:330px){
+  #uploadForm{
+    width:95vw;
+  }
+
+}
